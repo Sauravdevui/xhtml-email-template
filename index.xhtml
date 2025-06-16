@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive XHTML Email Template</title>
+    <style type="text/css">
+        /* General resets */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            border-collapse: collapse !important;
+            border-spacing: 0 !important;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100%;
+            display: block;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: #f9fafb;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+
+            .fluid {
+                max-width: 100% !important;
+                height: auto !important;
+                margin: auto !important;
+            }
+
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+
+            .button {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+
+        /* Button style */
+        .button {
+            background-color: #4f46e5;
+            border-radius: 8px;
+            color: #ffffff !important;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .button:hover {
+            background-color: #4338ca;
+        }
+
+        /* Container */
+        .email-wrapper {
+            width: 100%;
+            background-color: #f9fafb;
+            padding: 24px 0;
+        }
+
+        .email-content {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .email-header {
+            background: linear-gradient(90deg, #6366f1, #4f46e5);
+            padding: 24px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 28px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .email-body {
+            padding: 32px 24px;
+            color: #374151;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .email-footer {
+            padding: 24px;
+            text-align: center;
+            font-size: 14px;
+            color: #9ca3af;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3f4f6;
+        }
+
+        a {
+            color: #4f46e5;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <center class="email-wrapper">
+        <table class="email-content" width="600" cellpadding="0" cellspacing="0" role="presentation"
+            aria-label="Email content container">
+            <!-- Header -->
+            <tr>
+                <td class="email-header" role="banner" style="background-color: #4f46e5;">
+                    <img src="https://placehold.co/200x50/6366f1/ffffff?text=Company+Logo" width="200" height="50"
+                        alt="Company Logo with purple background and white text"
+                        style="display: block; margin: 0 auto 12px auto; border: none;" />
+                    Modern Note App
+                </td>
+            </tr>
+
+            <!-- Body -->
+            <tr>
+                <td class="email-body" role="main">
+                    <h1 style="margin-top: 0; font-size: 24px; font-weight: 700; color: #111827;">Welcome to Modern Note
+                        App</h1>
+                    <p>Hello,</p>
+                    <p>Thank you for choosing Modern Note App — your premium tool for seamless note-taking with advanced
+                        editing features.</p>
+                    <p>Get started by creating your first note and enjoy features like rich text editing, smart
+                        organization, and cloud sync simulation.</p>
+                    <p style="text-align: center; margin: 40px 0;">
+                        <a href="https://example.com/get-started" target="_blank" class="button" role="button"
+                            aria-label="Get started with Modern Note App">Get Started</a>
+                    </p>
+                    <p>If you have any questions, feel free to reply to this email. We're here to help!</p>
+                    <p>Best regards,<br />The Modern Note App Team</p>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td class="email-footer" role="contentinfo">
+                    <p>Modern Note App • 1234 Note Street • Notesville, NT 56789</p>
+                    <p><a href="https://example.com/privacy" target="_blank">Privacy Policy</a> | <a
+                            href="https://example.com/unsubscribe" target="_blank">Unsubscribe</a></p>
+                    <p>© 2024 Modern Note App. All rights reserved.</p>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
